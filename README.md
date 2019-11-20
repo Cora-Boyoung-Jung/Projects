@@ -1,6 +1,6 @@
 # Projects
 
 ### C##
-Lg Lg n
-Babble
-Fractal Fern
+* Lg Lg n
+* Babble
+* Fractal Fern

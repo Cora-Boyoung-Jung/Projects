@@ -1,0 +1,42 @@
+H:\prog03\fern\bin\Debug\fern.exe.config
+H:\prog03\fern\bin\Debug\fern.exe
+H:\prog03\fern\bin\Debug\fern.pdb
+H:\prog03\fern\obj\Debug\fern.csprojAssemblyReference.cache
+H:\prog03\fern\obj\Debug\MainWindow.baml
+H:\prog03\fern\obj\Debug\MainWindow.g.cs
+H:\prog03\fern\obj\Debug\App.g.cs
+H:\prog03\fern\obj\Debug\fern_MarkupCompile.cache
+H:\prog03\fern\obj\Debug\fern.g.resources
+H:\prog03\fern\obj\Debug\fern.Properties.Resources.resources
+H:\prog03\fern\obj\Debug\fern.csproj.GenerateResource.cache
+H:\prog03\fern\obj\Debug\fern.csproj.CoreCompileInputs.cache
+H:\prog03\fern\obj\Debug\fern.exe
+H:\prog03\fern\obj\Debug\fern.pdb
+H:\fern\bin\Debug\fern.exe.config
+H:\fern\bin\Debug\fern.exe
+H:\fern\bin\Debug\fern.pdb
+H:\fern\obj\Debug\fern.csprojAssemblyReference.cache
+H:\fern\obj\Debug\MainWindow.baml
+H:\fern\obj\Debug\MainWindow.g.cs
+H:\fern\obj\Debug\App.g.cs
+H:\fern\obj\Debug\fern_MarkupCompile.cache
+H:\fern\obj\Debug\fern.g.resources
+H:\fern\obj\Debug\fern.Properties.Resources.resources
+H:\fern\obj\Debug\fern.csproj.GenerateResource.cache
+H:\fern\obj\Debug\fern.csproj.CoreCompileInputs.cache
+H:\fern\obj\Debug\fern.exe
+H:\fern\obj\Debug\fern.pdb
+H:\Fractal Fern\bin\Debug\fern.exe.config
+H:\Fractal Fern\bin\Debug\fern.exe
+H:\Fractal Fern\bin\Debug\fern.pdb
+H:\Fractal Fern\obj\Debug\fern.csprojAssemblyReference.cache
+H:\Fractal Fern\obj\Debug\MainWindow.baml
+H:\Fractal Fern\obj\Debug\MainWindow.g.cs
+H:\Fractal Fern\obj\Debug\App.g.cs
+H:\Fractal Fern\obj\Debug\fern_MarkupCompile.cache
+H:\Fractal Fern\obj\Debug\fern.g.resources
+H:\Fractal Fern\obj\Debug\fern.Properties.Resources.resources
+H:\Fractal Fern\obj\Debug\fern.csproj.GenerateResource.cache
+H:\Fractal Fern\obj\Debug\fern.csproj.CoreCompileInputs.cache
+H:\Fractal Fern\obj\Debug\fern.exe
+H:\Fractal Fern\obj\Debug\fern.pdb

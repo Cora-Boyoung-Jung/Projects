@@ -1,0 +1,10 @@
+Cora Boyoung Jung
+CS 232 
+Homework: The Busy Bake Shop
+10 April, 2020
+
+1. Does your program run the same way each time? Why?
+	The program does not run the same way each time. Generally the lowest number comes first, but not always. I think it is because of the multi-threading. There are no logic sequence between the threads and they catch and release semaphores which means the threads have to wait. 
+
+2. Give your last customer thread the highest priority. Does this ensure that this customer is always given first priority? Why or why not?
+	No, it doesn't ensure that the the last customer is given first priority because if the lower priority thread has the semaphore, that last customer will have to wait for that semaphore.  

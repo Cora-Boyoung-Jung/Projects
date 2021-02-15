@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="document_example.css"/>
+</head>
+<body>
+<div class="instructions ignore">
+    <div>
+    Congratulations, you have landed your first job doing "Web Design." Your client is planning on making a competitor for Google Docs and Microsoft Office 365.  They have created an engine that spots spelling and grammar problems in 2 categories: errors and suggestions.  As well as auto-detects quotable paragraphs.  These things are marked within the text, using css classes.
+    </div>
+    <div>Normally, using newer web standards, some of these things could be addressed using existing tags, and not handled manually, but for some reason the back-end developer thought that the only tag that should ever be needed is div.  Without fixing the auto-generated text (so, from a separate stylesheet called document_example.css below we need you to:</div>
+    <ol>
+
+        <li>Underline all <b>errors</b> with that wavy underline all the cool word processors are using these days</li>
+        <li>Underline all <b>suggestions</b> with straight underlines</li>
+        <li>Make <b>spelling</b> underlines red</li>
+        <li>Make <b>grammar</b> underlines blue</li>
+        <li>Do not underline things in <b>blockquotes</b>. </li>
+        <li>Put a rounded (5px radius)<span style="color:lightgray">lightgray</span> background around <b>blockquotes</b></li>
+        <li>Give blockquotes 10px of padding </li>
+        <li>put a 20px margin on the left and right of <b>blockquotes</b></li>
+        <li><b>blockquotes</b> within <b>blockquotes</b> should not alter the text, nested blockquotes should have no effect.</li>
+        <li>Ensure that <b>other</b> tags do not interrupt the flow of the text</li>
+        <li>Do not display tags with the <b>ignore</b> class</li>
+        <li><b>Heading</b>s in the main document need to be bold and have a font size of <span style="font-size:3em;font-weight:bold;">3em</span> </li>
+        <li><b>Heading</b>s not in the main document (headings that are one level down) need to appear on their own line and be bold</li>
+        <li>Set the body width to 800px and body margin to auto to center the body.</li>
+        <li>Finally, hide this paragraph, upload this along with the rest of your site using filezilla, link to this page from your main page, and turn in a link to this page</li>
+    </ol>
+</div>
+<div class="document">
+    <div class="ignore">
+        Integer vel purus in velit commodo eleifend vitae vitae lacus. Suspendisse nec tellus ac massa auctor congue. Morbi a mi condimentum nunc ullamcorper luctus. Quisque sed ante elementum sapien aliquet suscipit vitae ac felis. Mauris ut porttitor nisl. Nulla vitae augue sed ipsum vehicula imperdiet nec in massa. Quisque a dolor laoreet, iaculis ipsum ut, placerat eros. Morbi eu arcu arcu. In sapien enim, luctus a nibh fringilla, iaculis tristique enim. Nunc nulla odio, scelerisque ac feugiat nec, sollicitudin vel nisl. <div class="spelling suggestion">Aenean</div> auctor eros augue. Vivamus a sagittis ex. Proin eu risus ac ex condimentum accumsan ut feugiat massa. Integer fringilla ipsum elementum enim tempus pretium. Praesent pulvinar eget elit ut convallis.
+    </div>
+    <div class="heading">Lorem ipsum</div>
+    <div>
+        <div class="grammar suggestion">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> <div class="spelling error">Pellentesque</div> posuere tempus odio, in faucibus tortor. Morbi nec consequat est, vel volutpat nunc. Morbi elementum lobortis fermentum. <div class="other">N</div>unc rutrum nulla sit amet ante blandit hendrerit eget vitae sem. In suscipit tortor id quam efficitur rutrum. Vivamus consectetur, mi vel aliquam molestie, odio erat vestibulum risus, eu euismod nunc quam eget neque. Nunc efficitur cursus elit, euismod commodo enim suscipit vel. Cras sit amet varius orci. Aliquam vitae vulputate velit, et posuere sapien. Integer mattis lacinia elit, rhoncus interdum justo volutpat porttitor. Phasellus ut feugiat erat. Nullam sed lobortis lorem. Morbi porttitor tempor rhoncus.
+    </div>
+    <div>
+        <div class="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        Aliquam sit amet lectus lectus. <div class="other">S</div>uspendisse convallis in ipsum nec sollicitudin. <div class="spelling suggestion">Aenean</div> commodo scelerisque velit ac dignissim. Nullam sollicitudin felis ac elit eleifend <div class="grammar error">accumsan.</div> Donec a diam nibh. Nullam varius nisi eu porttitor efficitur. Fusce sem sapien, pulvinar eget ex at, tempor porta sapien. Donec at porta neque, sit amet fringilla ipsum. Morbi et dui ut tellus porta ornare ac et erat. Etiam imperdiet diam eget erat tincidunt, vel consectetur nunc volutpat. Fusce tempor ipsum nec congue fermentum. Donec id nisi non justo ullamcorper commodo eu in nibh. Mauris sed quam sit amet enim sagittis condimentum.
+    </div>
+    <div>
+        Donec sollicitudin erat est, efficitur ultricies justo facilisis vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris non dolor non lacus laoreet rhoncus. Fusce suscipit fermentum varius. Aliquam sodales, nibh in commodo fringilla, odio ex molestie nibh, nec dignissim ligula odio mattis felis. Vivamus eget sem diam. Sed lacinia sollicitudin elit. Mauris ac arcu faucibus, sodales orci ut, bibendum risus. Vestibulum eleifend molestie congue. Etiam maximus quam nunc, vel interdum tellus egestas in. In hac habitasse platea dictumst. Morbi mattis neque risus, a vulputate purus aliquet a.
+    </div>
+    <div class="blockquote">
+        <div class="ignore">Donec ornare ipsum nec enim euismod, et ullamcorper nisl efficitur. Curabitur laoreet augue id nibh iaculis, at mattis tortor tincidunt. </div><div class="spelling error">Pellentesque</div> dapibus commodo mi at sagittis. Sed consequat sed libero a pulvinar. Ut in felis quis erat bibendum euismod. Donec pretium ligula massa, eget ultrices sem tincidunt vitae. <div class="spelling error">Pellentesque</div> ante elit, molestie vitae diam sed, convallis hendrerit velit. Integer sagittis purus a luctus interdum. Mauris sit amet augue eget augue ultricies porta. Aliquam blandit non erat eu ultricies.
+    </div>
+    <div>
+        <div class="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        Integer quis purus faucibus, vehicula ex quis, laoreet metus. Maecenas ac libero ac risus euismod blandit quis et mi. Cras et lectus hendrerit, mollis dui ut, fermentum risus. Praesent commodo tempor libero at fermentum. Cras convallis pharetra urna id <div class="spelling error">pellentesque</div>. Fusce eleifend est ut dolor convallis scelerisque. Proin rutrum nunc in tincidunt fermentum. Nam placerat ante non nibh volutpat vestibulum. <div class="grammar suggestion">Aliquam erat volutpat.</div> Maecenas at condimentum dui. Cras porta metus ut leo placerat dictum. Sed lectus lacus, dapibus ac leo id, dignissim dignissim nibh.
+    </div>
+    <div class="blockquote">
+        Morbi sit amet ante ante. Curabitur orci tortor, <div class="blockquote">condimentum sit amet sollicitudin quis</div>, interdum sit amet massa. Aliquam justo odio, convallis ac aliquam sit amet, congue vel felis. Phasellus et imperdiet purus, quis consectetur elit. Integer cursus congue ullamcorper. Maecenas non justo eu leo facilisis tincidunt in in felis. Suspendisse quis ligula nisi. Nam non faucibus magna. Mauris a ipsum at magna feugiat aliquam ut nec eros. Suspendisse at turpis accumsan metus gravida tincidunt. Cras ut neque sed mi feugiat molestie. Morbi sit amet risus a lacus vulputate vulputate. Curabitur et imperdiet magna. Suspendisse viverra elit eget nunc vehicula interdum. Duis vitae nunc id odio fermentum vestibulum.
+    </div>
+    <div>
+        Integer vel purus in velit commodo eleifend vitae vitae lacus. Suspendisse nec tellus ac massa auctor congue. Morbi a mi condimentum nunc ullamcorper luctus. Quisque sed ante elementum sapien aliquet suscipit vitae ac felis. Mauris ut porttitor nisl. Nulla vitae augue sed ipsum vehicula imperdiet nec in massa. Quisque a dolor laoreet, iaculis ipsum ut, placerat eros. Morbi eu arcu arcu. In sapien enim, luctus a nibh fringilla, iaculis tristique enim. Nunc nulla odio, scelerisque ac feugiat nec, sollicitudin vel nisl. <div class="spelling suggestion">Aenean</div> auctor eros augue. Vivamus a sagittis ex. Proin eu risus ac ex condimentum accumsan ut feugiat massa. Integer fringilla ipsum elementum enim tempus pretium. Praesent pulvinar eget elit ut convallis.
+    </div>
+    <div>
+        Vestibulum fringilla massa quis mauris dignissim, in auctor urna auctor. Proin eget maximus sem. Phasellus at rutrum nunc, consectetur maximus ligula. Phasellus rutrum ante vel tempus bibendum. Maecenas euismod libero vel urna faucibus, id tincidunt velit malesuada. Fusce vel mauris sapien. <div class="spelling error">Pellentesque</div> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer quis metus sed nulla scelerisque porta. Aliquam viverra purus non risus blandit maximus. Donec tincidunt <div class="spelling error">pellentesque</div> venenatis. Vivamus condimentum nulla a nulla posuere, id iaculis neque fermentum.
+    </div>
+    <div>
+        Phasellus eget lacus vehicula, ultrices risus a, iaculis dui. Suspendisse quis accumsan orci, interdum vulputate quam. <div class="spelling suggestion">Aenean</div> eu nibh sit amet elit efficitur ultricies at in massa. Phasellus feugiat nunc eros, sed ultricies dui convallis ut. Proin vitae ullamcorper neque. Praesent bibendum imperdiet consectetur. Duis vitae finibus nunc, at ultrices eros. Phasellus eget orci ante. Morbi interdum quam velit, a ornare ex <div class="spelling error">pellentesque</div> nec. Donec ut augue suscipit nisi tristique vestibulum lacinia ac erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam eleifend urna viverra odio placerat vulputate.
+    </div>
+    <div>
+        Etiam eget nunc vitae velit dapibus sollicitudin. <div class="spelling suggestion">Aenean</div> et porta metus. Phasellus elementum condimentum nunc eu pharetra. Donec faucibus tincidunt velit sed eleifend. Nunc viverra id tellus vel laoreet. Praesent sit amet laoreet urna. Sed mattis mi nec dui molestie, vel eleifend neque feugiat. Praesent ullamcorper risus vel urna scelerisque, nec egestas ipsum convallis.
+    </div>
+    <div>
+        Donec ac urna vulputate, molestie dolor finibus, ultricies arcu. <div class="spelling suggestion">Aenean</div> et nisl nulla. Etiam vitae blandit tortor. Praesent fermentum faucibus quam eget lobortis. In rhoncus felis est, et suscipit nisi porta vitae. Duis sodales sollicitudin consequat. Cras in maximus massa. Quisque enim urna, maximus nec turpis et, aliquam dapibus nunc. Suspendisse maximus tempor lectus vitae vulputate.
+    </div>
+    <div>
+        Maecenas ac mi ac neque efficitur eleifend quis ut tortor. <div class="spelling suggestion">Aenean</div> porta condimentum imperdiet. Vivamus id metus ante. Etiam posuere, nisi sit amet elementum placerat, ipsum nunc rutrum ex, vitae eleifend mauris est sed mauris. Nunc leo massa, aliquet sit amet tempus vitae, bibendum eu felis. Morbi porta molestie dolor vel <div class="grammar error">accumsan.</div> Suspendisse sit amet facilisis nulla. Maecenas auctor massa volutpat, dapibus nisi sit amet, cursus magna. Morbi consectetur bibendum est id varius. Cras mollis neque ac eros vehicula, id molestie nisi efficitur.
+    </div>
+    <div>
+        Curabitur mattis nisi in ante viverra, ac feugiat arcu efficitur. <div class="grammar suggestion">Suspendisse potenti.</div> Sed sit amet enim nisl. Sed mattis sapien ex, convallis finibus nibh dictum eget. Etiam aliquam elit vitae cursus ullamcorper. In hac habitasse platea dictumst. Morbi et metus nisi. Donec ultrices ex sed tempus rutrum. Nunc ultrices sollicitudin mauris, accumsan porta justo congue commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vestibulum nunc non libero commodo auctor. Vestibulum rhoncus iaculis mauris, ut malesuada turpis mollis eu. Vestibulum sodales ornare quam at lacinia. Vivamus tincidunt purus magna, non consequat justo lobortis ac. Fusce malesuada metus leo.
+    </div>
+    <div>
+        Suspendisse finibus fringilla dui rutrum molestie. Duis aliquet, quam at ultricies fringilla, lectus odio hendrerit leo, sit amet aliquet enim enim suscipit augue. Nullam libero urna, <div class="spelling error">pellentesque</div> ut lorem id, blandit <div class="grammar error">accumsan arcu.</div> Duis eu luctus ipsum. Praesent porttitor bibendum quam sed euismod. <div class="spelling error">Pellentesque</div> sit amet dui nibh. Nunc interdum risus vel egestas fringilla. Proin dignissim auctor nisl, quis iaculis libero tristique sit amet. Sed molestie ac ipsum at malesuada. In eget turpis quis velit efficitur <div class="spelling error">pellentesque</div> ac vitae ligula.
+    </div>
+    <div class="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    <div>
+        <div class="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        In quis luctus augue. Nunc sit amet lacus tristique, faucibus felis sit amet, rutrum tortor. Nam quis iaculis est, suscipit suscipit tortor. <div class="spelling suggestion">Aenean</div> mollis nulla rhoncus lorem efficitur, id tristique tortor dignissim. Cras aliquam turpis ipsum, nec pharetra tortor fringilla quis. Curabitur vel ipsum nec tellus placerat mollis vitae et mauris. Integer suscipit justo hendrerit tellus fermentum, et mattis sapien ultricies. Proin blandit dolor a eros blandit rhoncus. Praesent <div class="grammar error">accumsan condimentum pretium.</div> Vestibulum ipsum ante, maximus a lobortis cursus, efficitur quis ante. Nunc iaculis nisl et arcu hendrerit vulputate. Maecenas et massa tellus. Mauris ac urna ac metus mollis finibus eget sed ligula.
+    </div>
+    <div>
+        In sapien magna, dapibus eu lacus ut, sodales <div class="grammar error">accumsan magna.</div> Vivamus sed erat sit amet orci finibus malesuada id eget tortor. Nam hendrerit, massa tincidunt pharetra viverra, mi urna commodo massa, nec ultricies erat ex quis urna. Suspendisse in magna a nisl viverra efficitur. Quisque et dolor mauris. Sed pulvinar augue a <div class="grammar error">accumsan fringilla.</div> Nulla non augue leo. Maecenas facilisis quis elit in blandit. Curabitur eget risus neque. Vivamus sagittis urna velit, id malesuada urna sagittis ac. Ut odio mi, viverra volutpat sapien sed, condimentum feugiat augue. Donec in felis porta, convallis justo ac, congue mi. <div class="spelling error">Pellentesque</div> vel arcu urna. Suspendisse eu risus et leo bibendum iaculis quis quis urna. Vivamus vitae dignissim diam. <div class="grammar suggestion">Nulla facilisi.</div>
+    </div>
+    <div>
+        Donec tempor dui ex, et iaculis orci imperdiet et. Sed in lacinia est. Morbi eget metus metus. Donec a erat malesuada, porta neque consequat, pharetra ex. Aliquam vel congue justo, vitae pharetra sapien. Donec lobortis eros ullamcorper vulputate tincidunt. Vestibulum fringilla erat lorem. Cras tempor lacinia ante a tincidunt. Fusce maximus nisi vel elementum auctor. In porta, sem et consectetur tincidunt, sem enim posuere urna, vel efficitur felis nisi eget elit. Sed sem mauris, eleifend a sem quis, rhoncus elementum felis. Suspendisse quis ornare tellus. Mauris quis hendrerit ligula, posuere rutrum lorem. <div class="spelling error">Pellentesque</div> condimentum lectus nisl, id dictum magna dapibus sodales.
+    </div>
+    <div>
+        Integer ultricies felis magna, ut sagittis arcu sollicitudin eu. Sed dapibus, turpis eget faucibus pharetra, sapien neque posuere leo, sed aliquet felis orci ut est. Ut viverra velit id auctor condimentum. Etiam convallis magna augue, vehicula tincidunt metus sagittis sit amet. Mauris porttitor imperdiet ultrices. Cras sagittis imperdiet lobortis. Donec eget nibh libero. Morbi sit amet luctus enim. Suspendisse tristique felis orci, a lobortis lacus viverra vel. Donec dignissim, neque at placerat vulputate, tellus nibh posuere justo, et imperdiet tortor neque sit amet ipsum. Fusce maximus efficitur erat luctus luctus. Aliquam scelerisque nunc sollicitudin maximus viverra. Vestibulum eget nulla placerat, interdum sem id, luctus arcu. Cras nec velit diam. Curabitur est ex, suscipit sed velit accumsan, pharetra tincidunt massa. Duis felis leo, pharetra eu blandit eget, rutrum vel elit.
+    </div>
+    <div>
+        Sed et tincidunt augue. Vestibulum suscipit vulputate quam, sit amet molestie purus eleifend id. <div class="spelling suggestion">Aenean</div> lacinia tellus sed imperdiet pharetra. Curabitur eget nibh turpis. Aliquam vitae dolor urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam rutrum porttitor ligula, sit amet scelerisque magna <div class="grammar error">accumsan eu.</div> Curabitur ultrices <div class="spelling error">pellentesque</div> mi, at <div class="spelling error">pellentesque</div> urna mollis ac.
+    </div>
+    <div>
+        Donec vitae suscipit quam. <div class="spelling error">Pellentesque</div> tristique sapien urna, non venenatis dui porttitor eget. Nunc ornare lacus velit, vitae facilisis tortor vestibulum tempus. Quisque venenatis nunc velit. Nulla efficitur, dolor at maximus bibendum, erat libero condimentum purus, a vestibulum dolor libero tempor nisl. Donec porttitor odio ac urna sagittis, ac sodales nisl dignissim. Morbi scelerisque eu tellus sit amet gravida. Ut nunc orci, mattis eget elit id, auctor semper libero. Vestibulum ut blandit ligula, vel rutrum magna. Nulla finibus finibus nibh, dictum posuere libero pulvinar at. Nam sit amet sodales metus. <div class="spelling error">Pellentesque</div> ut leo quis ante iaculis dictum. Nam id dictum erat, ac interdum neque. Praesent efficitur in lacus ut consectetur.
+    </div>
+    <div>
+        Vivamus vitae imperdiet risus. Donec lobortis rutrum blandit. Duis sit amet dignissim tortor. <div class="spelling suggestion">Aenean</div> sagittis tempus eros, quis fringilla elit consectetur nec. Proin egestas turpis quis elit rutrum, in commodo neque vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam suscipit fringilla massa, eget convallis odio varius eu. Vestibulum quis luctus mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. <div class="spelling suggestion">Aenean</div> iaculis est enim, eu <div class="spelling error">pellentesque</div> nulla cursus ac. <div class="spelling error">Pellentesque</div> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut hendrerit <div class="spelling error">pellentesque</div> mauris, vestibulum volutpat neque rutrum quis. Curabitur id dignissim augue. Suspendisse eget neque velit. Praesent sagittis tincidunt augue, non venenatis diam laoreet in. Suspendisse tempus laoreet magna commodo faucibus.
+    </div>
+    <div>
+        Suspendisse fringilla, ex non aliquam pretium, ipsum tortor congue odio, ac semper ex velit nec elit. Phasellus consequat elit quis blandit rutrum. Curabitur molestie purus vel consectetur iaculis. Vestibulum nisi lorem, ornare et elit sed, pharetra molestie ligula. Vivamus mollis quam sem, eget vestibulum odio faucibus eget. <div class="spelling suggestion">Aenean</div> in nisi nibh. Duis ultrices urna rutrum erat scelerisque tristique sed id metus. Sed ultrices ullamcorper sem, in dictum diam condimentum et. Nullam vehicula ut quam nec venenatis. Donec nec lorem vehicula, tristique dui in, pretium libero. Vivamus vitae auctor nisi. <div class="spelling suggestion">Aenean</div> ultrices, turpis quis feugiat varius, velit mi egestas ipsum, ac tristique neque neque a massa. Vivamus et commodo ante, non lobortis augue.
+    </div>
+    <div>
+        <div class="spelling suggestion">Aenean</div> quis velit ut diam ultricies iaculis. Etiam tristique in arcu eget maximus. Fusce a pretium ipsum. Fusce gravida justo nibh, quis ultricies purus aliquam nec. Morbi efficitur sagittis libero nec feugiat. Duis laoreet nec sem quis pretium. Donec volutpat tellus ut dapibus pretium. Duis egestas sem vel lacus porta, nec <div class="grammar error">accumsan massa tempor.</div> Donec venenatis neque ut mi suscipit, eget <div class="grammar error">accumsan ex pharetra.</div> Nulla condimentum odio lacus, at tristique tellus porttitor vel. Curabitur malesuada ex libero, commodo auctor arcu volutpat in.
+    </div>
+    <div>
+        Sed at convallis felis, sit amet blandit purus. Nulla convallis pharetra felis sed egestas. Nulla vel sagittis lorem, et fermentum dolor. Maecenas in diam quis felis gravida fermentum. Proin ac urna vel quam <div class="grammar error">accumsan aliquet.</div> Vestibulum semper dolor bibendum, efficitur nisl vitae, varius enim. Integer mollis neque lectus, ut venenatis erat vehicula tincidunt. Vivamus ultricies arcu in est bibendum <div class="spelling error">pellentesque</div>. Ut vehicula metus eu ipsum convallis, ac interdum risus facilisis.
+    </div>
+    <div>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec tincidunt massa a nisl euismod, eu hendrerit turpis vestibulum. Vivamus a blandit mi. Phasellus eu maximus nunc. Sed ac est a dolor ultrices ullamcorper in ut quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut quis justo pulvinar, accumsan dolor eu, consequat nisl. Aliquam dignissim lectus in nibh egestas, sit amet mattis orci vulputate. Etiam a dui ullamcorper urna ullamcorper rhoncus. <div class="spelling suggestion">Aenean</div> iaculis mi nec augue vestibulum euismod. Vivamus mollis mi eget ultrices varius.
+    </div>
+    <div class="heading">Lorem ipsum</div>
+</div>
+</body>
+</html>

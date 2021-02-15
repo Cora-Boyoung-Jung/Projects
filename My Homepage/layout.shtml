@@ -1,0 +1,43 @@
+<style>
+    .layout{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layout_row_2 {
+        display: flex;
+        flex-grow: 1;
+        min-height: 15em;
+        align-items: stretch;
+		margin: 10px;
+    }
+	
+    .layout_aside{
+        flex: 0 0 12em;
+    }
+
+    .layout_body{
+        flex-grow:1;
+    }
+
+    .layout_row_1, .layout_row_3{
+        min-height: 5em;
+    }
+
+    .layout_row{
+    }
+</style>
+<div class="layout">
+    <div class="layout_row layout_row_1">
+        {{{header}}}
+    </div>
+	<div>
+		{{{nav}}}
+	</div>
+    <div class="layout_row layout_row_2">
+        <div class="layout_body">{{{body}}}</div>   <div class="layout_aside">{{{aside}}}</div>
+    </div>
+    <div class="layout_row layout_row_3">
+        {{{footer}}}
+    </div>
+</div>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="sitebuilder.js"></script>
+	<link rel="stylesheet"  href="site_builder_example.css" />
+	<title>Style Demo</title>
+	<style>
+		.flex-container > div {
+			color: white;
+			width: 100px;
+			margin: 10px;
+			text-align: center;
+			line-height: 75px;
+			border: solid;
+		}
+		.aside{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Style Demo</h1>
+	
+	<fieldset>
+		<legend>Color Palette</legend>
+		<div style="display:flex" class="flex-container">
+		  <div style="background-color: #5B443E;">#5B443E</div>
+		  <div style="background-color: #CD6858;">#CD6858</div>
+		  <div style="background-color: #CECECD;">#CECECD</div>
+		  <div style="background-color: #CFA987;">#CFA987</div>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Tags</legend>
+		<h1>h1</h1>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h4>h4</h4>
+		<h5>h5</h5>
+		<h6>h6</h6>
+		<p>This is a paragraph tag. The paragraph tag goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.</p>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Hyperlink</legend>
+		<a id="tag" href="https://www.google.com/">Link to Google</a>
+	</fieldset>
+
+	<fieldset>
+		<legend>Table</legend>
+		<table>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th> 
+			</tr>
+			<tr>
+				<td id="s">Bobae</td>
+				<td id="s">Jung</td>
+			</tr>
+			<tr>
+				<td id="s">Bo Ah</td>
+				<td id="s">Jung</td>
+			</tr>
+			<tr>
+				<td id="s">Boyoung</td>
+				<td id="s">Jung</td>
+			</tr>
+		</table>
+	</fieldset>
+
+	<fieldset>
+		<legend>An Ordered List</legend>
+		<ol>
+			<li>Gold medal</li>
+			<li>Silver medal</li>
+			<li>Bronze medal</li>
+		</ol> 
+	</fieldset>
+
+	<fieldset>
+		<legend>An Unordered List</legend>
+		<ul>
+			<li>Red</li>
+			<li>Blue</li>
+			<li>Green</li>
+		</ul> 
+	</fieldset>
+
+	<fieldset>
+		<legend>Default Body Text</legend>
+		<p>ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKL</p>
+	</fieldset>	
+
+	<fieldset>
+		<legend>Form Fields</legend>
+		<label for="textinput">Text Input:</label>
+		<input type="text" id="text" name="text"><br>
+		
+		<p>Radio Button</p>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+		
+		<p>Check Box</p>
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		<label for="vehicle1"> I have a bike</label><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		<label for="vehicle2"> I have a car</label><br>	
+		
+		<p>Button</p>
+		<input type="button" onclick="myfunction()" value="Click Me">
+
+		<script>
+			function myfunction() {
+				alert("You just clicked the button!");
+			}
+		</script>
+	</fieldset>	
+		
+
+	
+		
+		
+</body>

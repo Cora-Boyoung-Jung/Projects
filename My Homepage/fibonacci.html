@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Javascript: Fibonacci</title>
+		<script type="text/javascript">
+			var  first_number = prompt("Please enter the first number for our sequence calculation");
+			var  second_number = prompt("Please enter the second number for our sequence calculation");
+
+			first_number = parseInt(first_number);
+			second_number = parseInt(second_number);
+			
+			console.log("First input number is " + first_number);
+			console.log("Second input number is " + second_number);
+
+			var previous_number = first_number;
+			var next_number = second_number;
+			var count = 10;
+
+			console.log("Recursive method:")
+			function fib(first, second, countdown){
+				if(countdown>0){
+					console.log(first+second)
+					fib(second, first+second, countdown-1);
+				}
+			}
+			fib(first_number, second_number, count);
+
+			
+			console.log("While-loop method:")
+			while(count>0)
+			{
+			count = count - 1;
+			var new_number = previous_number + next_number;
+			previous_number = next_number;
+			next_number = new_number;
+			console.log(next_number)
+			}
+		
+		</script>
+	</head>
+	<body>
+		<p>Inspect this page!</p>
+	</body>
+</html>
+

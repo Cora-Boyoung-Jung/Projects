@@ -1,0 +1,78 @@
+/* 1 */
+.error {
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+}
+
+/* 2 */
+.suggestion {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+/* 3 */
+.spelling {
+	text-decoration-color: red;
+	display: inline;
+}
+
+/* 4 */
+.grammar {
+	text-decoration-color: blue;
+	display: inline;
+}
+
+/* 5, 9 */
+.blockquote > div {
+	text-decoration-line: initial;
+	text-decoration-style: initial; 
+	display: inline;
+	padding: initial;
+	margin-left: initial;
+	margin-right: initial;	
+}
+
+/* 6, 7, 8 */
+.blockquote {
+	border-radius: 5px;
+	background: lightgray;
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* 10 */
+.other{
+	display: inline;
+}
+
+
+/* 11, 15 */
+.ignore {
+	display: none;
+}
+
+/* 12 */
+.heading {
+	font-size:3em;
+	font-weight:bold
+}
+
+/* 13 */
+div > div > .heading{
+	font-size: medium;
+	font-weight:bold;
+	display: block;
+	margin-bottom: initial;
+}
+
+/* 14 */
+body {
+	width: 800px;
+	margin: auto;
+}
+
+/* Extra */
+div > div {
+	margin-bottom: 1em;
+}

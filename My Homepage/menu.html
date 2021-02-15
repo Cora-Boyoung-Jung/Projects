@@ -1,0 +1,184 @@
+<!--Day 19
+ CS 100, Fall, 2014
+ Sinai Park(sp46)
+ Cora Boyoung Jung(bj29)
+ Daniel Jung(cj37)-->
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="sitebuilder.js"></script>
+	<link rel="stylesheet"  href="site_builder_example.css" />
+  
+	<title>Day 19: Client Side Form Processing</title>
+
+	<script type="text/javascript">
+
+		function calculate_total() {
+		  var subtotal = 0;
+		  
+		  //calculate burger
+		  var food_option = document.getElementById('burger');
+		  var food_option_selected = food_option.checked;
+		  var food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate hotdog
+		  food_option = document.getElementById('hotdog');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate ketchup
+		  food_option = document.getElementById('ketchup');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate mustard
+		  food_option = document.getElementById('mustard');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate bbq
+		  food_option = document.getElementById('bbq');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate beef
+		  food_option = document.getElementById('beef');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate bacon
+		  food_option = document.getElementById('bacon');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate lettuce
+		  food_option = document.getElementById('lettuce');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate pickle
+		  food_option = document.getElementById('pickle');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate tomato
+		  food_option = document.getElementById('tomato');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate cheese
+		  food_option = document.getElementById('cheese');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate onion
+		  food_option = document.getElementById('onion');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate doritos
+		  food_option = document.getElementById('doritos');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+		  //calculate fries
+		  food_option = document.getElementById('fries');
+		  food_option_selected = food_option.checked;
+		  food_option_price = parseFloat(food_option.getAttribute('data-price'));
+		  if (food_option_selected) {
+			subtotal = subtotal + food_option_price;
+		  }
+
+
+		  var subtotal_box = document.getElementById('subtotal');
+		  var tax_box = document.getElementById('tax');
+		  var total_box = document.getElementById('total');
+		  sub = subtotal.toFixed(2);
+		  tax = (subtotal * 0.06).toFixed(2);
+		  total = (subtotal * 1.06).toFixed(2);
+		  subtotal_box.value = sub;
+		  tax_box.value = tax;
+		  total_box.value = total;
+		}
+	</script>
+</head>
+<body>
+  <h1>Menu</h1>
+  <fieldset>
+    <legend>Customize Your Own Food:</legend><br>
+	<label for="name">Your Name:</label>
+    <input type="text" id="name">
+	   <br><br>
+	<label for="main">Main:</label><br>
+	<input type="radio" id="burger" name="main" data-price="4.50" onClick="calculate_total()"/>
+	<label for="burger">Burger</label><br>
+	<input type="radio" id="hotdog" name="main" data-price="4.00" onClick="calculate_total()"/>
+	<label for="hotdog">Hotdog</label>
+	   <br><br>
+	<label for="ingredient">Ingredient:</label><br>
+    <input type="checkbox" id="beef" data-price="0.50" onClick="calculate_total()"/>
+	<label for="Beef">Beef Patty/Sausage</label><br>
+    <input type="checkbox" id="bacon" data-price="0.50" onClick="calculate_total()" />
+	<label for="bacon">Bacon</label><br>
+    <input type="checkbox" id="lettuce" data-price="0.10" onClick="calculate_total()" />
+	<label for="Lettuce">Lettuce</label><br>
+    <input type="checkbox" id="pickle" data-price="0.10" onClick="calculate_total()" />
+	<label for="pickle">Pickle</label><br>
+    <input type="checkbox" id="cheese" data-price="0.10" onClick="calculate_total()" />
+	<label for="cheese">Cheese</label><br>
+    <input type="checkbox" id="tomato" data-price="0.10" onClick="calculate_total()" />
+	<label for="tomato">Tomato</label><br>
+    <input type="checkbox" id="onion" data-price="0.10" onClick="calculate_total()" />
+	<label for="onion">Onion</label>
+	  <br><br>
+    <label for="sauce">Sauce:</label><br>
+    <input type="checkbox" id="ketchup" data-price="0.10" onClick="calculate_total()" />
+	<label for="ketchup">Ketchup</label><br>
+    <input type="checkbox" id="mustard" data-price="0.10" onClick="calculate_total()" />
+	<label for="mustard">Mustard</label><br>
+    <input type="checkbox" id="bbq" data-price="0.10" onClick="calculate_total()" />
+	<label for="bbq">BBQ sauce</label>
+	  <br><br>
+    <label for="sides">Side:</label><br>
+    <input type="radio" id="doritos" name="sides" data-price="0.75" onClick="calculate_total()" />
+	<label for="doritos">Doritos</label><br>
+    <input type="radio" id="fries" name="sides" data-price="0.90" onClick="calculate_total()" />
+	<label for="fries">Fries</label><br>
+	  <br><br>
+    <label for="subtotal">Subtotal: </label><input type="text" id="subtotal"><br><br>
+    <label for="tax">Tax: </label><input type="text" id="tax"><br><br>
+    <label for="total">Total: </label><input type="text" id="total"><br><br>
+    <input type="submit" onClick="calculate_total()" />
+  </fieldset>
+
+</body>
+
+</html>

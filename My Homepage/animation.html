@@ -1,0 +1,99 @@
+<!--Day 22
+ CS 100, Fall, 2020
+ Sinai Park(sp46)
+ Cora Boyoung Jung(bj29)
+ Daniel Jung(cj37)-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<script src="sitebuilder.js"></script>
+	<link rel="stylesheet"  href="site_builder_example.css" />
+    <title>Animation</title>
+	
+	<style>
+      #mycanvas {
+        border: 2mm solid #5B443E;
+        border-radius: 1em;
+      }
+    </style>
+	
+  </head>
+
+  <body onload="draw();">
+    <canvas id="mycanvas" width="500px" height="300px"></canvas>
+
+    <script type="text/javascript">
+
+      var frame_number = 0;
+	  var x1 = 0, x2 = 500;
+
+      function draw() {
+        frame_number = frame_number + 1;
+		var canvas = document.getElementById("mycanvas");
+		var ctx = canvas.getContext("2d");
+				
+		ctx.beginPath();
+		ctx.clearRect(0,0,500,300);
+		
+
+		ctx.lineWidth = 10;
+		ctx.strokeStyle = "#5B443E";
+		ctx.beginPath();
+		ctx.arc(250, 140, 50, 0, 2*Math.PI, false);
+		ctx.fillStyle = "#5B443E";
+		ctx.fill();
+		ctx.stroke();
+			
+	
+		function getRandomColour(){
+			var red = Math.floor(Math.random()* 255);
+			var green = Math.floor(Math.random() * 255);
+			var blue = Math.floor(Math.random() * 255);
+
+			return "rgb("+red+","+green+"," +blue+" )";  
+		}
+		
+		
+		ctx.lineWidth = 10;
+		ctx.lineCap = "round";
+		ctx.strokeStyle = getRandomColour();
+		if (x1 < 500) {
+			x1 += 2;
+			ctx.beginPath();
+			ctx.moveTo(x1,90);
+			ctx.lineTo(x1,90);
+			ctx.stroke();
+		} else {
+			x1 = 0;
+		}
+		
+		if (x2 > 0) {
+			x2 -= 2;
+			ctx.beginPath();
+			ctx.moveTo(x2,190);
+			ctx.lineTo(x2,190);
+			ctx.stroke();
+		} else {
+			x2 = 500;
+		}
+				
+
+		var gradient = ctx.createLinearGradient(250, 100, 300, 200);
+		gradient.addColorStop("0", "#CD6858");
+		gradient.addColorStop("0.5", "#CFA987");
+		gradient.addColorStop("1", "#CECECD");
+		
+		ctx.font = "bold 30px Verdana";
+		ctx.textAlign = "center";
+		ctx.fillStyle = gradient;
+		ctx.fillText("JUNG", canvas.width/2, canvas.height/2);		
+		
+        setTimeout(draw, 20);
+
+      }
+
+    </script>
+  </body>
+</html>

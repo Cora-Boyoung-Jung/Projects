@@ -1,0 +1,87 @@
+<!--
+Lab: Forms
+CS 100, Fall 2020
+Cora Boyoung Jung
+September 22nd, 2020
+
+This webpage demonstrates html elements and attributes to create a form.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="sitebuilder.js"></script>
+	<link rel="stylesheet"  href="site_builder_example.css" />
+	<title>Calvin GWC Form</title>
+</head>
+<body>
+	<h1>Calvin Girls Who Code Form</h1>
+	<form action="https://www.w3schools.com/action_page.php" method="post">
+		<fieldset>
+			<legend>Personal:</legend>
+			<label for="fullname">Full name:</label>
+			<input type="text" id="fname" name="fname" required><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="tel">Phone Number:</label>
+			<input type="tel" id="tel" name="tel" required><br><br>
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday"><br><br>
+			<label for="gender">Gender:</label>
+			<input type="radio" name="gender" value="female">Female
+			<input type="radio" name="gender" value="male">Male<br><br>
+			<label for="grade">Grade:</label>
+			<select name="grade" id="grade" required>
+				<option value=""></option>
+				<option value="4th">4th</option>
+				<option value="5th">5th</option>
+				<option value="6th">6th</option>
+				<option value="7th">7th</option>
+				<option value="8th">8th</option>
+				<option value="9th">9th</option>
+				<option value="10th">10th</option>
+				<option value="11th">11th</option>
+				<option value="12th">12th</option>
+			</select><br><br>
+			<label for="race">Race:</label>
+			<input list="race" name="race">
+			<datalist id="race">
+				<option value="Asian">
+				<option value="Black">
+				<option value="Caucasian">
+				<option value="Hispanic">
+			</datalist><br>
+		</fieldset>
+		<fieldset>
+			<legend>Background:</legend>
+			<p>● Which programming language have you used before?</p>
+				<input type="checkbox" id="l1" name="l1">
+				<label for="l1"> HTML</label><br>
+				<input type="checkbox" id="l2" name="l2">
+				<label for="l2"> CSS</label><br>
+				<input type="checkbox" id="l3" name="l3">
+				<label for="l3"> Javascript</label><br>
+				<input type="checkbox" id="l4" name="l4">
+				<label for="l4"> Phython</label><br>
+				<input type="checkbox" id="l5" name="l5">
+				<label for="l5"> C++</label><br>
+				<input type="checkbox" id="l6" name="l6">
+				<label for="l6"> I have not done any programming before</label>
+			<p>● Why do you want to attend Girls Who Code?</p>
+				<input type="checkbox" id="a1" name="a1">
+				<label for="a1"> I am interested in computing</label><br>
+				<input type="checkbox" id="a2" name="a2">
+				<label for="a2"> This particular program sounded fun</label><br>
+				<input type="checkbox" id="a3" name="a3">
+				<label for="a3"> My parent(s) signed me up</label><br>
+				<input type="checkbox" id="a4" name="a4">
+				<label for="a4"> My friend(s) told me about it</label><br>
+		</fieldset><br>
+		<div style="text-align:center">
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset"><br><br>
+		</div>
+	</form>
+</body>
+</html>
